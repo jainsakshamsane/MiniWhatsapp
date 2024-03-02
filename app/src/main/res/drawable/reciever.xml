@@ -1,0 +1,26 @@
+<!-- res/drawable/received_text_box.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Triangle Shape -->
+    <item android:top="-10dp" android:left="0dp">
+        <rotate
+            android:fromDegrees="45"
+            android:pivotX="0%"
+            android:pivotY="100%">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/white" />
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- Rounded Rectangle Shape -->
+    <item>
+        <shape>
+            <solid android:color="@color/white" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/white" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+</layer-list>

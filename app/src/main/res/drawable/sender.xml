@@ -1,0 +1,26 @@
+<!-- res/drawable/rounded_triangle_top_right.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Triangle Shape -->
+    <item android:top="-6dp" android:right="0dp">
+        <rotate
+            android:fromDegrees="-45"
+            android:pivotX="100%"
+            android:pivotY="100%">
+            <shape android:shape="rectangle">
+                <solid android:color="#7F4C8F" />
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- Rounded Rectangle Shape -->
+    <item>
+        <shape>
+            <solid android:color="#7F4C8F" />
+            <stroke
+                android:width="0dp"
+                android:color="#7F4C8F" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+</layer-list>

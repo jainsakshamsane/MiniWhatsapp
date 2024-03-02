@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/meetme"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/meetme"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MiniWhatsapp"
+        tools:targetApi="31">
+        <activity
+            android:name=".FlashscreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WelcomeScreenActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".TermsofServiceActivity"></activity>
+        <activity android:name=".PrivacyPolicyActivity"></activity>
+        <activity android:name=".LoginNumberActivity"></activity>
+        <activity android:name=".OtpVerifyActivity"></activity>
+        <activity android:name=".UserDetailsActivity"></activity>
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".ChatPage_Activity"></activity>
+        <activity android:name=".UploadStatus"></activity>
+        <activity android:name=".StatusViewActivity"></activity>
+        <activity android:name=".OthersStatusView_Activity"></activity>
+    </application>
+
+</manifest>

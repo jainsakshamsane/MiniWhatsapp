@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#7F4C8F"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:text="You're Almost there!" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#7F4C8F"
+                android:layout_marginTop="40dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:text="Add your Details to continue." />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:id="@+id/uploadimage"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/profilepp" />
+
+            <Button
+                android:id="@+id/btnUpload"
+                android:text="Upload"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_below="@+id/layout_button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_below="@id/linear1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="185dp"
+                android:layout_height="60dp"
+                android:hint="First Name"
+                android:id="@+id/firstname"
+                android:background="@drawable/phone_number"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:padding="10dp" />
+
+            <EditText
+                android:layout_width="185dp"
+                android:layout_height="60dp"
+                android:hint="Last Name"
+                android:id="@+id/lastname"
+                android:background="@drawable/phone_number"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_below="@id/linear2"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Email ID"
+                android:id="@+id/email"
+                android:background="@drawable/phone_number"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear3"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/savedetails"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/agree_button"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="SAVE DETAILS"
+                android:onClick="sendOtpClick"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

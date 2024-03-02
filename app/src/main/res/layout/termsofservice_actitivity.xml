@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/back"
+                android:layout_gravity="center"
+                android:src="@drawable/back_wp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#7F4C8F"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:text="Terms of Service" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear1"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Since we started WhatsApp, we've built our Services with strong privacy and security principles in mind.
+Connecting You With Other People. We provide, and always strive to improve, ways for you to communicate with other WhatsApp users including through messages, voice and video calls, sending images and video, showing your status, and sharing your location with others when you choose. We may provide a convenient platform that enables you to send and receive money to or from other users across our platform. WhatsApp works with partners, service providers, and affiliated companies to help us provide ways for you to connect with their services.
+Ways To Improve Our Services. We analyze how you make use of WhatsApp, in order to improve our Services, including helping businesses who use WhatsApp measure the effectiveness and distribution of their services and messages. WhatsApp uses the information it has and also works with partners, service providers, and affiliated companies to do this.
+Communicating With Businesses. We provide, and always strive to improve, ways for you and businesses and other organizations, to communicate with each other using our Services, such as through order, transaction, and appointment information, delivery and shipping notifications, product and service updates, and marketing.
+Safety, Security, And Integrity. We work to protect the safety, security, and integrity of our Services. This includes appropriately dealing with abusive people and activity violating our Terms. We work to prohibit misuse of our Services including harmful conduct towards others, violations of our Terms and policies, and address situations where we may be able to help support or protect our community. If we learn of people or activity like this, we will take appropriate action, including by removing such people or activity or contacting law enforcement. Any such removal will be in accordance with the “Termination” section below.
+Enabling Access To Our Services. To operate our global Services, we need to store and distribute content and information in data centers and systems around the world, including outside your country of residence. The use of this global infrastructure is necessary and essential to provide our Services. This infrastructure may be owned or operated by our service providers including affiliated companies.
+Affiliated Companies. We are part of the Meta Companies. As part of the Meta Companies, WhatsApp receives information from, and shares information with, the Meta Companies as described in WhatsApp's Privacy Policy, including to provide integrations which enable you to connect your WhatsApp experience with other Meta Company Products; to ensure security, safety, and integrity across the Meta Company Products; and to improve your ads and products experience across the Meta Company Products. Learn more about the Meta Companies and their terms and policies here."
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:paddingLeft="0dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

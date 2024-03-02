@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#7F4C8F"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:text="Welcome to Mini Whatsapp" />
+
+<!--            <ImageView-->
+<!--                android:layout_width="130dp"-->
+<!--                android:layout_height="130dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="@drawable/circle_shape"-->
+<!--                android:src="@drawable/img" />-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_width="4dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/image_wp"
+                app:civ_border_color="#FF000000"
+                android:layout_width="200dp"
+                android:layout_height="300dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_below="@id/linear1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read Our"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:paddingLeft="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7F4C8F"
+                android:padding="0dp"
+                android:id="@+id/privacypolicy"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text=" Privacy Policy." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Tap 'Agree and continue'"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to accept the"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:paddingLeft="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7F4C8F"
+                android:padding="0dp"
+                android:id="@+id/termsofservice"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text=" Terms of Service." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/agreebutton"
+                android:textColor="@color/white"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/agree_button"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="AGREE AND CONTINUE"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

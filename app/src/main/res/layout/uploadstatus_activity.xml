@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/linear1"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/back"
+            android:layout_gravity="center"
+            android:src="@drawable/back_wp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="#7F4C8F"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginLeft="110dp"
+            android:gravity="center"
+            android:text="Status" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linear2"
+        android:layout_below="@id/linear1"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/statusimage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="0dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/statustext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tap to add status update"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/upload"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/agree_button"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="UPLOAD STATUS"
+            android:onClick="sendOtpClick"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

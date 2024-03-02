@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/status"
+    android:padding="0dp"
+    android:id="@+id/mainLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear1" >
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:max="100"
+        android:progress="0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/back"
+            android:layout_gravity="center"
+            android:src="@drawable/backyyy" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mystatusimage"
+            android:layout_width="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/namee"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caption Text"
+            android:id="@+id/mycaption"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Time"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"
+        android:layout_marginStart="110dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/dotsmenu"
+        android:onClick="showDeleteMenu"
+        android:src="@drawable/dotty" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear3"
+        android:orientation="vertical"
+        android:layout_below="@id/linear2" >
+
+    <ImageView
+        android:id="@+id/statusimage"
+        android:layout_width="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_height="600dp"
+        android:layout_marginEnd="0dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="0dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/statustext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tap to add status update"
+        android:padding="0dp"
+        android:layout_marginTop="800dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        tools:ignore="NotSibling" />
+
+    <ImageView
+        android:id="@+id/viewlist"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:src="@drawable/see"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+</RelativeLayout>
